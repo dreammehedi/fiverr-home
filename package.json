@@ -1,0 +1,20 @@
+{
+  "name": "sport",
+  "version": "1.0.0",
+  "description": "This is a sport e-commerce website selling various athletic products and gear.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/input.css -o ./tailwind.css -w"
+  },
+  "keywords": [
+    "sport",
+    "e-commerce",
+    "athletic products",
+    "gear"
+  ],
+  "author": "Mehedi Hassan Miraj",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
