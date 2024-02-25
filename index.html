@@ -22,8 +22,81 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- remix icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css"
+      integrity="sha512-i5VzKip7owqOGjb0YTF8MR2J9yBVO3FLHeazKzLp354XYTmKcqEU3UeFYUw82R8tV6JqxeATOfstCfpfPhbyEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- tailwind css -->
     <link rel="stylesheet" href="./tailwind.css" />
   </head>
-  <body class="font-barlow"></body>
+  <body class="font-barlow">
+    <!-- header -->
+    <header
+      style="
+        background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template-p-1600.jpeg);
+      "
+      class="w-full h-screen"
+    >
+      <!-- nav -->
+      <nav class="container py-2 flex justify-between items-center text-white">
+        <!-- logo -->
+        <a href="./index.html">
+          <img
+            class="max-w-[200px]"
+            src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60359b25d811e171f69cedde_logo-esports-template.svg"
+            alt="logo"
+          />
+        </a>
+        <!-- mobile menu -->
+        <ul
+          id="mobile-menu"
+          class="transition-all duration-500 ease-linear lg:hidden w-1/3 h-screen fixed top-0 -left-full opacity-0 bg-black/80 shadow-2xl shadow-primary-1 px-4 py-8 flex flex-col gap-4 font-chakra-petch font-semibold uppercase"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- menu -->
+        <ul
+          class="hidden lg:flex justify-between items-center gap-4 font-chakra-petch font-semibold uppercase"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- cart & button -->
+        <div class="flex justify-between items-center gap-6">
+          <button
+            class="relative rounded-xl bg-primary-1 text-white flex justify-center items-center text-base font-semibold px-6 py-3"
+          >
+            Cart<span
+              class="font-black flex justify-center items-center w-2 h-2 p-2 rounded-xl text-xs absolute top-1/3 -translate-y-1/3 right-[10px]"
+              >0</span
+            >
+          </button>
+          <button
+            class="hidden lg:flex rounded-xl bg-primary-1 text-white justify-center items-center text-base font-semibold px-6 py-3"
+          >
+            Buy February
+          </button>
+          <!-- toggle menu -->
+          <i
+            id="toggle-btn"
+            class="lg:hidden font-black text-2xl cursor-pointer ri-menu-4-fill"
+          ></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- javascript -->
+    <script src="./main.js"></script>
+  </body>
 </html>
