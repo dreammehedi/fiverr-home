@@ -42,54 +42,56 @@
       class="w-full h-screen bg-no-repeat bg-cover bg-center"
     >
       <!-- nav -->
-      <nav
-        class="container w-full h-[20vh] py-2 flex justify-between items-center text-white"
-      >
-        <!-- logo -->
-        <a href="./index.html">
-          <img
-            class="max-w-[200px]"
-            src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60359b25d811e171f69cedde_logo-esports-template.svg"
-            alt="logo"
-          />
-        </a>
-        <!-- mobile menu -->
-        <ul
-          id="mobile-menu"
-          class="transition-all duration-500 ease-linear lg:hidden w-1/3 h-screen fixed top-0 -left-full opacity-0 bg-black/80 shadow-2xl shadow-primary-1 px-4 py-8 flex flex-col gap-4 font-chakra-petch font-semibold uppercase"
+      <div id="nav" class="transition-all duration-200 ease-linear">
+        <nav
+          class="container w-full h-[20vh] py-2 flex justify-between items-center text-white"
         >
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <!-- menu -->
-        <ul
-          class="hidden lg:flex justify-between items-center gap-4 font-chakra-petch font-semibold uppercase"
-        >
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <!-- cart & button & toggle menu -->
-        <div class="flex justify-between items-center gap-6">
-          <button class="relative btn">
-            Cart<span
-              class="font-black flex justify-center items-center w-2 h-2 p-2 rounded-xl text-xs absolute top-1/3 -translate-y-1/3 right-[10px]"
-              >0</span
-            >
-          </button>
-          <button class="hidden lg:flex btn">Buy February</button>
-          <!-- toggle menu -->
-          <i
-            id="toggle-btn"
-            class="lg:hidden font-black text-2xl cursor-pointer ri-menu-4-fill"
-          ></i>
-        </div>
-      </nav>
+          <!-- logo -->
+          <a href="./index.html">
+            <img
+              class="max-w-[200px]"
+              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60359b25d811e171f69cedde_logo-esports-template.svg"
+              alt="logo"
+            />
+          </a>
+          <!-- mobile menu -->
+          <ul
+            id="mobile-menu"
+            class="transition-all duration-500 ease-linear lg:hidden w-1/3 h-screen fixed top-0 -left-full opacity-0 bg-black/80 shadow-2xl shadow-primary-1 px-4 py-8 flex flex-col gap-4 font-chakra-petch font-semibold uppercase"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <!-- menu -->
+          <ul
+            class="hidden lg:flex justify-between items-center gap-4 font-chakra-petch font-semibold uppercase"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <!-- cart & button & toggle menu -->
+          <div class="flex justify-between items-center gap-6">
+            <button class="relative btn">
+              Cart<span
+                class="font-black flex justify-center items-center w-2 h-2 p-2 rounded-xl text-xs absolute top-1/3 -translate-y-1/3 right-[10px]"
+                >0</span
+              >
+            </button>
+            <button class="hidden lg:flex btn">Buy February</button>
+            <!-- toggle menu -->
+            <i
+              id="toggle-btn"
+              class="lg:hidden font-black text-2xl cursor-pointer ri-menu-4-fill"
+            ></i>
+          </div>
+        </nav>
+      </div>
 
       <!-- banner -->
       <div class="container">
