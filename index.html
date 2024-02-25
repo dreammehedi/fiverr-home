@@ -33,7 +33,7 @@
     <!-- tailwind css -->
     <link rel="stylesheet" href="./tailwind.css" />
   </head>
-  <body class="font-barlow text-white">
+  <body class="font-barlow bg-black text-white">
     <!-- header -->
     <header
       style="
@@ -76,7 +76,7 @@
         </ul>
         <!-- cart & button & toggle menu -->
         <div class="flex justify-between items-center gap-6">
-          <button class="btn">
+          <button class="relative btn">
             Cart<span
               class="font-black flex justify-center items-center w-2 h-2 p-2 rounded-xl text-xs absolute top-1/3 -translate-y-1/3 right-[10px]"
               >0</span
@@ -112,6 +112,40 @@
         </div>
       </div>
     </header>
+
+    <!-- SPONSORED BY -->
+    <section class="bg-black">
+      <div
+        class="container flex flex-col lg:flex-row justify-center md:justify-start items-center gap-8"
+      >
+        <h2 class="text-2xl font-black uppercase text-white">SPONSORED BY</h2>
+        <!-- SPONSORED BY LOGO -->
+        <div
+          class="flex-1 flex flex-wrap justify-evenly lg:justify-between items-center gap-8"
+        >
+          <img
+            class="max-w-[150px] object-cover h-auto"
+            src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035a652475a51ccfa2984fc_logo-1-sponsor-esports-template.svg"
+            alt="Facebook"
+          />
+          <img
+            class="max-w-[150px] object-cover h-auto"
+            src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035a6522bc7e697ae8fbb2f_logo-2-sponsor-esports-template.svg"
+            alt="Twitch"
+          />
+          <img
+            class="max-w-[150px] object-cover h-auto"
+            src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035a6522acc655e5a97ae46_logo-3-sponsor-esports-template.svg"
+            alt="YouTube"
+          />
+          <img
+            class="max-w-[150px] object-cover h-auto"
+            src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035a65298b6ec28fb929496_logo-4-sponsor-esports-template.svg"
+            alt="Discorg"
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- javascript -->
     <script src="./main.js"></script>
