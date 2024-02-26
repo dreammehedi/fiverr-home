@@ -39,12 +39,12 @@
       style="
         background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template-p-1600.jpeg);
       "
-      class="w-full h-screen bg-no-repeat bg-cover bg-center"
+      class="w-full h-auto bg-no-repeat bg-cover bg-center"
     >
       <!-- nav -->
       <div id="nav" class="transition-all duration-200 ease-linear">
         <nav
-          class="container w-full h-[20vh] py-2 flex justify-between items-center text-white"
+          class="container w-full h-auto py-2 flex justify-between items-center text-white"
         >
           <!-- logo -->
           <a href="./index.html">
@@ -94,9 +94,11 @@
       </div>
 
       <!-- banner -->
-      <div class="container">
+      <div
+        class="container min-h-[300px] md:min-h-[400px] lg:h-[500px] h-full flex items-center"
+      >
         <div
-          class="flex flex-col justify-center items-center text-center md:text-left md:items-start gap-4 w-full h-[80vh] lg:max-w-lg"
+          class="flex flex-col justify-center items-center text-center md:text-left md:items-start gap-4 w-full h-auto lg:max-w-lg"
         >
           <h1
             class="font-black text-3xl md:text-[40px] leading-normal text-white"
