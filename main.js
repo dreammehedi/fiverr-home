@@ -16,7 +16,8 @@ window.addEventListener("scroll", () => {
       "w-full",
       "h-auto",
       "top-0",
-      "left-0"
+      "left-0",
+      "z-50"
     );
   } else {
     navbar.classList.remove(
@@ -25,7 +26,8 @@ window.addEventListener("scroll", () => {
       "w-full",
       "h-auto",
       "top-0",
-      "left-0"
+      "left-0",
+      "z-50"
     );
   }
 });

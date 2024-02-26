@@ -683,8 +683,8 @@ section {
   inset: -0.25rem;
 }
 
-.-left-0 {
-  left: -0px;
+.\!-left-0 {
+  left: -0px !important;
 }
 
 .-left-10 {
@@ -719,10 +719,6 @@ section {
   top: 2.5rem;
 }
 
-.\!-left-0 {
-  left: -0px !important;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -733,6 +729,10 @@ section {
 
 .-z-10 {
   z-index: -10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-start {
@@ -1498,6 +1498,10 @@ section {
   gap: 2rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2189,6 +2193,16 @@ section {
   line-height: 1rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -2199,6 +2213,10 @@ section {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -2746,6 +2764,16 @@ section {
   .md\:text-\[40px\] {
     font-size: 40px;
   }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2775,6 +2803,10 @@ section {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 }
 
