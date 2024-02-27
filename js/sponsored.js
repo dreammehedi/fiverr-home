@@ -7,7 +7,7 @@ const sponsoredContent = [
 const sponsoredId = document.getElementById("sponsored");
 sponsoredId.innerHTML = `${sponsoredContent
   .map((logo) => {
-    return `<img
+    return `<img 
     class="max-w-[150px] object-cover h-auto cursor-pointer opacity-50 hover:opacity-100 hover:scale-[1.1]"
     src="${logo}"
     alt="Facebook"

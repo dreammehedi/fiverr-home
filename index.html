@@ -30,6 +30,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- AOS animation added -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- tailwind css -->
     <link rel="stylesheet" href="./tailwind.css" />
   </head>
@@ -105,6 +107,7 @@
 
       <!-- banner -->
       <div
+        data-aos="fade-bottom"
         class="container min-h-[400px] md:min-h-[400px] lg:h-[500px] h-full flex items-center"
       >
         <div
@@ -170,9 +173,15 @@
       <div
         class="container flex flex-col lg:flex-row justify-center md:justify-between items-center gap-8 md:gap-12"
       >
-        <h2 class="text-2xl font-black uppercase text-white">SPONSORED BY</h2>
+        <h2
+          data-aos="fade-right"
+          class="text-2xl font-black uppercase text-white"
+        >
+          SPONSORED BY
+        </h2>
         <!-- SPONSORED BY LOGO -->
         <div
+          data-aos="fade-left"
           id="sponsored"
           class="flex-1 flex flex-wrap justify-evenly lg:justify-between items-center gap-8 *:transition-all *:duration-300 *:ease-linear"
         >
@@ -182,12 +191,13 @@
     </section>
 
     <!-- about team -->
-    <section class="container">
+    <section class="container overflow-hidden">
       <div
         class="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-8"
       >
         <!-- about team info -->
         <div
+          data-aos="fade-right"
           class="flex flex-col justify-center items-center text-center md:text-left md:items-start gap-4"
         >
           <h1
@@ -217,7 +227,7 @@
         </div>
 
         <!-- about team video -->
-        <div class="relative">
+        <div data-aos="fade-left" class="relative">
           <div
             class="absolute w-full h-full bg-primary-1/60 top-10 -left-10 -z-10 rounded-xl"
           ></div>
@@ -236,6 +246,7 @@
     <section class="container">
       <!-- upcoming matches content -->
       <div
+        data-aos="zoom-in"
         class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-2xl mx-auto mb-8"
       >
         <h1
@@ -265,6 +276,7 @@
     <section class="container">
       <!-- articles and news content -->
       <div
+        data-aos="zoom-in"
         class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-2xl mx-auto mb-8"
       >
         <h1
@@ -301,6 +313,7 @@
       class="bg-no-repeat bg-center bg-cover"
     >
       <div
+        data-aos="zoom-in"
         class="container flex flex-col lg:flex-row text-center lg:text-left justify-center lg:justify-between items-center gap-4 py-6 md:py-10"
       >
         <div class="flex flex-col gap-3 w-full md:max-w-2xl">
@@ -332,6 +345,7 @@
     <!-- featured product -->
     <section class="container">
       <div
+        data-aos="zoom-in"
         class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-lg mx-auto mb-8"
       >
         <h1
@@ -356,6 +370,7 @@
     <!-- follow -->
     <section class="container">
       <div
+        data-aos="zoom-in"
         class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-lg mx-auto mb-8"
       >
         <h1
@@ -386,7 +401,7 @@
           class="flex flex-col md:flex-row justify-between items-center gap-8 py-8 pb-10"
         >
           <!-- logo -->
-          <a href="./index.html">
+          <a data-aos="zoom-in-up" href="./index.html">
             <h1 class="text-2xl md:text-3xl font-black uppercase">
               M<span class="text-primary-1 font-chakra-petch">Sports</span>
             </h1>
@@ -420,6 +435,11 @@
     <script src="./js/follow.js"></script>
     <script src="./js/footer-menu.js"></script>
     <script src="./js/date.js"></script>
+    <!-- AOS animation added -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./main.js"></script>
   </body>
 </html>

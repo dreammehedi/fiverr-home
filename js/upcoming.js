@@ -61,7 +61,7 @@ const upcomingMatchid = document.getElementById("upcoming-match");
 
 upcomingMatchid.innerHTML = `${upcomingContent
   .map((upcoming) => {
-    return `<div
+    return `<div data-aos="zoom-in-up"
 style="
   background-image: url(${upcoming.bg});
 "

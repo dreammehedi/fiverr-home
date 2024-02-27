@@ -2780,6 +2780,10 @@ section {
   forced-color-adjust: none;
 }
 
+.container {
+  overflow: hidden;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3042,6 +3046,10 @@ section {
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+
+  .sm\:container {
+    overflow: hidden;
   }
 }
 

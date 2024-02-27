@@ -38,7 +38,7 @@ const footerMenuId = document.getElementById("footer-menu");
 footerMenuId.innerHTML = `${footerMenuList
   .map((menu) => {
     console.log(menu.menu);
-    return `<div class="flex flex-col gap-2">
+    return `<div data-aos="zoom-in-up" class="flex flex-col gap-2">
     <h2 class="text-primary-1 text-xl font-semibold uppercase">${
       menu.title
     }</h2>

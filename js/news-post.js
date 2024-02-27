@@ -3,6 +3,7 @@ const newsPostContent = [
     img: "https://assets-global.website-files.com/60358955e12a8aa033b99eed/6036a378ae900b289b840721_image-6-blog-post-esports-template-p-800.jpeg",
     btn: "MERCH",
     date: "JANUARY 27, 2024",
+    aos: "fade-up-right",
     title: {
       first: "OUR NEW ",
       second: " BRANDED HEADPHONES ",
@@ -13,6 +14,7 @@ const newsPostContent = [
     img: "https://img.freepik.com/free-photo/side-view-hands-typing-keyboard_23-2149349996.jpg?w=740&t=st=1709026819~exp=1709027419~hmac=3f5f544e6cd9ed1192cdbfdca648902c6662930e04c9429a5f9849bb2dfb0ef3",
     btn: "APRIL",
     date: "JANUARY 1, 2024",
+    aos: "fade-up-left",
     title: {
       first: "OUR NEW ",
       second: " BRANDED HEADPHONES ",
@@ -23,7 +25,7 @@ const newsPostContent = [
 const newsPostId = document.getElementById("news-post");
 newsPostId.innerHTML = `${newsPostContent
   .map((news) => {
-    return `<div>
+    return `<div data-aos="${news.aos}">
     <figure class="overflow-hidden rounded-xl">
       <img
         class="w-full h-auto md:min-h-[400px] object-cover cursor-pointer transition-all duration-300 ease-linear hover:scale-[1.05]"
