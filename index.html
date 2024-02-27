@@ -12,9 +12,9 @@
       name="keywords"
       content="sport, e-commerce, athletic products, gear"
     />
-    <title>Sport | Mehedi |</title>
+    <title>Sport | Mehedi Hassan Miraj |</title>
     <!-- favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +37,7 @@
     <!-- header -->
     <header
       style="
-        background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template-p-1600.jpeg);
+        background-image: url(https://img.freepik.com/free-photo/gaming-setup-arrangement-high-angle_23-2149680232.jpg?w=740&t=st=1709026183~exp=1709026783~hmac=f8500d9284340cd1bc4bbddcc6735838be7784db46d8adeb6a0a127a7bda1a71);
       "
       class="w-full h-auto bg-no-repeat bg-cover bg-center"
     >
@@ -48,46 +48,56 @@
         >
           <!-- logo -->
           <a href="./index.html">
-            <img
-              class="max-w-[200px]"
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60359b25d811e171f69cedde_logo-esports-template.svg"
-              alt="logo"
-            />
+            <h1 class="text-2xl md:text-3xl font-black uppercase">
+              M<span class="text-primary-1 font-chakra-petch">Sports</span>
+            </h1>
           </a>
           <!-- mobile menu -->
           <ul
             id="mobile-menu"
-            class="transition-all duration-500 ease-linear lg:hidden w-1/3 h-screen fixed top-0 -left-full opacity-0 bg-black/80 shadow-2xl shadow-primary-1 px-4 py-8 flex flex-col gap-4 font-chakra-petch font-semibold uppercase"
+            class="transition-all duration-500 ease-linear lg:hidden w-1/3 h-screen fixed top-0 -left-full opacity-0 bg-green-500/90 shadow-xl shadow-primary-1 px-4 py-8 flex flex-col gap-4 font-chakra-petch font-semibold uppercase *:transition-all *:duration-300 *:ease-linear"
           >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
+            <!-- mobile menu dynamic -->
           </ul>
           <!-- menu -->
           <ul
-            class="hidden lg:flex justify-between items-center gap-4 font-chakra-petch font-semibold uppercase"
+            id="desktop-menu"
+            class="hidden lg:flex text-green-500 justify-between items-center gap-4 font-chakra-petch font-semibold uppercase *:transition-all *:duration-300 *:ease-linear"
           >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
+            <!-- desktop menu dynamic -->
           </ul>
           <!-- cart & button & toggle menu -->
           <div class="flex justify-between items-center gap-6">
-            <button class="relative btn">
-              Cart<span
-                class="font-black flex justify-center items-center w-2 h-2 p-2 rounded-xl text-xs absolute top-1/3 -translate-y-1/3 right-[10px]"
-                >0</span
+            <button
+              class="group relative min-h-[50px] w-20 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+            >
+              <span
+                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
+              ></span>
+              <span
+                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
+                >Cart
+                <span
+                  class="font-black flex justify-center items-center w-2 h-2 p-2 rounded-xl text-xs absolute top-1/3 -translate-y-1/3 right-[10px]"
+                  >0</span
+                ></span
               >
             </button>
-            <button class="hidden lg:flex btn">Buy February</button>
+            <button
+              class="group hidden lg:flex relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+            >
+              <span
+                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
+              ></span>
+              <span
+                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
+                >Buy February</span
+              >
+            </button>
             <!-- toggle menu -->
             <i
               id="toggle-btn"
-              class="lg:hidden font-black text-2xl cursor-pointer ri-menu-4-fill"
+              class="lg:hidden font-black text-3xl cursor-pointer ri-menu-4-fill"
             ></i>
           </div>
         </nav>
@@ -95,23 +105,61 @@
 
       <!-- banner -->
       <div
-        class="container min-h-[300px] md:min-h-[400px] lg:h-[500px] h-full flex items-center"
+        class="container min-h-[400px] md:min-h-[400px] lg:h-[500px] h-full flex items-center"
       >
         <div
-          class="flex flex-col justify-center items-center text-center md:text-left md:items-start gap-4 w-full h-auto lg:max-w-lg"
+          class="flex flex-col justify-center items-center text-center md:text-left md:items-start gap-4 w-full h-auto lg:max-w-xl"
         >
           <h1
             class="font-black text-3xl md:text-[40px] leading-normal text-white"
           >
-            NEXT-GENERATION ESPORTS TEAM
+            <span class="text-green-500">NEXT</span>-GENERATION
+            <span class="text-primary-1">ESPORTS</span>
+            <span class="text-green-500">TEAM</span>
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et quis
-            odio vestibulum nunc, neque integer purus.
+            Seek sponsorship deals with gaming hardware brands, energy drink
+            companies, and other relevant brands. Negotiate partnerships with
+            esports organizations, gaming platforms, and event organizers for
+            exposure and support. Develop mutually beneficial relationships that
+            provide financial backing and promotional opportunities.
           </p>
-          <div class="flex justify-between items-center gap-6">
-            <button class="btn">Buy February</button>
-            <button class="btn">Meet The Team</button>
+          <div
+            class="flex flex-wrap md:flex-nowrap justify-evenly md:justify-between items-center gap-6"
+          >
+            <button
+              class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+            >
+              <span
+                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
+              ></span>
+              <span
+                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
+                >Buy February</span
+              >
+            </button>
+            <button
+              class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+            >
+              <span
+                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
+              ></span>
+              <span
+                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
+                >Cart</span
+              >
+            </button>
+            <button
+              class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+            >
+              <span
+                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
+              ></span>
+              <span
+                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
+                >Meet The Team</span
+              >
+            </button>
           </div>
         </div>
       </div>
@@ -120,33 +168,15 @@
     <!-- SPONSORED BY -->
     <section class="bg-black">
       <div
-        class="container flex flex-col lg:flex-row justify-center md:justify-start items-center gap-8"
+        class="container flex flex-col lg:flex-row justify-center md:justify-between items-center gap-8 md:gap-12"
       >
         <h2 class="text-2xl font-black uppercase text-white">SPONSORED BY</h2>
         <!-- SPONSORED BY LOGO -->
         <div
-          class="flex-1 flex flex-wrap justify-evenly lg:justify-between items-center gap-8"
+          id="sponsored"
+          class="flex-1 flex flex-wrap justify-evenly lg:justify-between items-center gap-8 *:transition-all *:duration-300 *:ease-linear"
         >
-          <img
-            class="max-w-[150px] object-cover h-auto"
-            src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035a652475a51ccfa2984fc_logo-1-sponsor-esports-template.svg"
-            alt="Facebook"
-          />
-          <img
-            class="max-w-[150px] object-cover h-auto"
-            src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035a6522bc7e697ae8fbb2f_logo-2-sponsor-esports-template.svg"
-            alt="Twitch"
-          />
-          <img
-            class="max-w-[150px] object-cover h-auto"
-            src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035a6522acc655e5a97ae46_logo-3-sponsor-esports-template.svg"
-            alt="YouTube"
-          />
-          <img
-            class="max-w-[150px] object-cover h-auto"
-            src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035a65298b6ec28fb929496_logo-4-sponsor-esports-template.svg"
-            alt="Discorg"
-          />
+          <!-- sponsored logo -->
         </div>
       </div>
     </section>
@@ -163,14 +193,26 @@
           <h1
             class="font-black text-3xl md:text-[40px] leading-normal text-white"
           >
-            ABOUT THE DRAGON ESPORTS TEAM
+            ABOUT THE DRAGON <span class="text-green-500">ESPORTS</span> TEAM
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et quis
-            odio vestibulum nunc, neque integer purus.
+            The Dragon eSports Team is a next-generation powerhouse in the world
+            of competitive gaming. Founded on the principles of dedication,
+            skill, and innovation, our team stands at the forefront of eSports
+            excellence.
           </p>
           <div class="flex justify-between items-center gap-6">
-            <button class="btn">Buy February</button>
+            <button
+              class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+            >
+              <span
+                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
+              ></span>
+              <span
+                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
+                >Buy February</span
+              >
+            </button>
           </div>
         </div>
 
@@ -194,234 +236,67 @@
     <section class="container">
       <!-- upcoming matches content -->
       <div
-        class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-lg mx-auto mb-8"
+        class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-2xl mx-auto mb-8"
       >
         <h1
           class="font-black text-3xl md:text-[40px] leading-normal text-white"
         >
-          UPCOMING MATCHES
+          <span class="text-green-500">UPCOMING</span> MATCHES
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et quis odio
-          vestibulum nunc, neque integer purus.
+          As of my last update in January 2024, I don't have access to real-time
+          data such as upcoming matches for specific eSports teams. To find
+          information about upcoming matches for the Dragon eSports Team or any
+          other team, I recommend checking official eSports websites, team
+          social media accounts, or specialized eSports news websites. These
+          platforms typically provide up-to-date schedules, match listings, and
+          other relevant information about upcoming matches and tournaments.
         </p>
       </div>
 
       <!-- upcoming detailes -->
-      <div class="flex flex-col justify-center items-center gap-8">
-        <div
-          style="
-            background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035b2ae30dbf469741aa817_bg-match-esports-template-p-1600.jpeg);
-          "
-          class="bg-no-repeat bg-center bg-cover p-8 w-full h-auto grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-4 rounded-xl"
-        >
-          <div class="flex flex-col gap-2">
-            <span class="font-bold text-base">Terra</span>
-            <h1 class="font-semibold text-2xl md:text-3xl uppercase">
-              INTERNATIONAL TOURNAMENT 2024
-            </h1>
-            <div
-              class="flex flex-col lg:flex-row items-start justify-start lg:items-center gap-4"
-            >
-              <div class="flex gap-2">
-                <i class="ri-time-fill"></i>
-                <p>December 10, 2022, 12:00 PM</p>
-              </div>
-              <div class="flex gap-2">
-                <i class="ri-timer-flash-fill"></i>
-                <p>Watch Stream</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-center md:justify-end items-center gap-4">
-            <img
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60367af6252c9281d2e54552_image-1-team-esports-template.svg"
-              alt=""
-            />
-            <span class="uppercase text-3xl font-chakra-petch font-semibold"
-              >VS</span
-            >
-            <img
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60367af5ef32a5995e3b17f9_image-2-team-esports-template.svg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div
-          style="
-            background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035b2ae30dbf469741aa817_bg-match-esports-template-p-1600.jpeg);
-          "
-          class="bg-no-repeat bg-center bg-cover p-8 w-full h-auto grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-4 rounded-xl"
-        >
-          <div class="flex flex-col gap-2">
-            <span class="font-bold text-base">Terra</span>
-            <h1 class="font-semibold text-2xl md:text-3xl uppercase">
-              INTERNATIONAL TOURNAMENT 2024
-            </h1>
-            <div
-              class="flex flex-col lg:flex-row items-start justify-start lg:items-center gap-4"
-            >
-              <div class="flex gap-2">
-                <i class="ri-time-fill"></i>
-                <p>December 10, 2022, 12:00 PM</p>
-              </div>
-              <div class="flex gap-2">
-                <i class="ri-timer-flash-fill"></i>
-                <p>Watch Stream</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-center md:justify-end items-center gap-4">
-            <img
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60367af6252c9281d2e54552_image-1-team-esports-template.svg"
-              alt=""
-            />
-            <span class="uppercase text-3xl font-chakra-petch font-semibold"
-              >VS</span
-            >
-            <img
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60367af6baffded24dd1632c_image-3-team-esports-template.svg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div
-          style="
-            background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035b2ae30dbf469741aa817_bg-match-esports-template-p-1600.jpeg);
-          "
-          class="bg-no-repeat bg-center bg-cover p-8 w-full h-auto grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-4 rounded-xl"
-        >
-          <div class="flex flex-col gap-2">
-            <span class="font-bold text-base">Terra</span>
-            <h1 class="font-semibold text-2xl md:text-3xl uppercase">
-              INTERNATIONAL TOURNAMENT 2024
-            </h1>
-            <div
-              class="flex flex-col lg:flex-row items-start justify-start lg:items-center gap-4"
-            >
-              <div class="flex gap-2">
-                <i class="ri-time-fill"></i>
-                <p>December 10, 2022, 12:00 PM</p>
-              </div>
-              <div class="flex gap-2">
-                <i class="ri-timer-flash-fill"></i>
-                <p>Watch Stream</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-center md:justify-end items-center gap-4">
-            <img
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60367af6252c9281d2e54552_image-1-team-esports-template.svg"
-              alt=""
-            />
-            <span class="uppercase text-3xl font-chakra-petch font-semibold"
-              >VS</span
-            >
-            <img
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60367af6baffded639d1632b_image-4-team-esports-template.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      <div
+        id="upcoming-match"
+        class="flex flex-col justify-center items-center gap-8"
+      ></div>
     </section>
 
     <!-- articles and news -->
     <section class="container">
       <!-- articles and news content -->
       <div
-        class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-lg mx-auto mb-8"
+        class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-2xl mx-auto mb-8"
       >
         <h1
-          class="font-black text-3xl md:text-[40px] leading-normal text-white"
+          class="font-black text-3xl md:text-[40px] leading-normal text-green-500"
         >
-          ARTICLES AND NEWS
+          ARTICLES <span class="text-primary-1">AND</span> NEWS
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et quis odio
-          vestibulum nunc, neque integer purus.
+          TheScore eSports: TheScore offers comprehensive coverage of eSports
+          news, scores, and updates across different games and tournaments. Dot
+          Esports: Dot Esports is a leading eSports news website providing
+          coverage of breaking news, features, and analysis across the eSports
+          industry.
         </p>
       </div>
 
       <!-- news post -->
       <div
+        id="news-post"
         class="grid grid-cols-1 lg:grid-cols-2 justify-between gap-6 lg:gap-8"
-      >
-        <div>
-          <img
-            class="w-full h-auto object-cover"
-            src="https://assets-global.website-files.com/60358955e12a8aa033b99eed/6036a378ae900b289b840721_image-6-blog-post-esports-template-p-800.jpeg"
-            alt=""
-          />
-          <div class="flex flex-col gap-3">
-            <div class="flex justify-between items-center">
-              <button class="btn">MERCH</button>
-              <h4 class="uppercase font-medium text-lg">SEPTEMBER 1, 2022</h4>
-            </div>
-            <h1 class="font-semibold text-2xl md:text-3xl uppercase">
-              OUR NEW BRANDED HEADPHONES ARE NOW FOR SALE
-            </h1>
-          </div>
-        </div>
-
-        <!-- grid news post -->
-        <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-8">
-          <div class="flex flex-col gap-3">
-            <figure>
-              <img
-                class="w-full h-auto object-cover"
-                src="https://assets-global.website-files.com/60358955e12a8aa033b99eed/6036a989491209bfc36df462_image-2-blog-post-esports-template-p-500.jpeg"
-                alt=""
-              />
-            </figure>
-            <figcaption class="font-semibold text-lg md:text-xl uppercase">
-              THE BEST KEYBOARD FOR HIGH-END GAMING
-            </figcaption>
-          </div>
-          <div class="flex flex-col gap-3">
-            <figure>
-              <img
-                class="w-full h-auto object-cover"
-                src="https://assets-global.website-files.com/60358955e12a8aa033b99eed/6036a91e3bf20805d9d86e06_image-3-blog-post-esports-template-p-800.jpeg"
-                alt=""
-              />
-            </figure>
-            <figcaption class="font-semibold text-lg md:text-xl uppercase">
-              THE BEST KEYBOARD FOR HIGH-END GAMING
-            </figcaption>
-          </div>
-          <div class="flex flex-col gap-3">
-            <figure>
-              <img
-                class="w-full h-auto object-cover"
-                src="https://assets-global.website-files.com/60358955e12a8aa033b99eed/6036a85a7493721fa6d4ab50_image-4-blog-post-esports-template-p-500.jpeg"
-                alt=""
-              />
-            </figure>
-            <figcaption class="font-semibold text-lg md:text-xl uppercase">
-              THE BEST KEYBOARD FOR HIGH-END GAMING
-            </figcaption>
-          </div>
-          <div class="flex flex-col gap-3">
-            <figure>
-              <img
-                class="w-full h-auto object-cover"
-                src="https://assets-global.website-files.com/60358955e12a8aa033b99eed/6036a789f04d9fda3fa02d7f_image-5-blog-post-esports-template-p-500.jpeg"
-                alt=""
-              />
-            </figure>
-            <figcaption class="font-semibold text-lg md:text-xl uppercase">
-              THE BEST KEYBOARD FOR HIGH-END GAMING
-            </figcaption>
-          </div>
-        </div>
-      </div>
+      ></div>
+      <!-- grid news post -->
+      <div
+        id="articles-news"
+        class="mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-8"
+      ></div>
     </section>
 
     <!-- Support Our Team -->
     <section
       style="
-        background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/603686c9b7df9139e41fb0f5_bg-cta-esports-template-p-1600.jpeg);
+        background-image: url(https://img.freepik.com/free-photo/view-neon-illuminated-gaming-desk-setup-with-keyboard_23-2149529379.jpg?w=740&t=st=1709026623~exp=1709027223~hmac=6443c29f16f1bcfe6dc8c085a0973181b314b5fe370ab137ab70040e67a6dc6f);
       "
       class="bg-no-repeat bg-center bg-cover"
     >
@@ -430,15 +305,27 @@
       >
         <div class="flex flex-col gap-3 w-full md:max-w-2xl">
           <h1 class="uppercase font-bold text-2xl md:text-4xl">
-            GET OUR MERCH & SUPPORT OUR TEAM
+            GET OUR <span class="text-green-500">MERCH</span> & SUPPORT
+            <span class="text-green-500">OUR TEAM</span>
           </h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
-            voluptatem dignissimos asperiores natus reprehenderit numquam omnis
-            exercitationem quas error et!
+            Events and Tournaments: If you attend eSports events, tournaments,
+            or conventions where the Dragon eSports Team is participating, they
+            may have a merchandise booth set up where you can purchase team
+            merchandise directly.
           </p>
         </div>
-        <button class="btn text-xl md:text-2xl">Get March</button>
+        <button
+          class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+        >
+          <span
+            class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
+          ></span>
+          <span
+            class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
+            >GET MERCH</span
+          >
+        </button>
       </div>
     </section>
 
@@ -450,87 +337,20 @@
         <h1
           class="font-black text-3xl md:text-[40px] leading-normal text-white"
         >
-          FEATURED PRODUCTS
+          FEATURED <span class="text-green-500">PRODUCTS</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et quis odio
-          vestibulum nunc, neque integer purus.
+          Posters and Art Prints: Artwork and posters featuring the Dragon
+          eSports Team members or iconic moments from tournaments can be great
+          collectibles for fans to display in their gaming setup or room.
         </p>
       </div>
 
       <!-- product detailes -->
       <div
+        id="product-detailes"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-4 md:gap-6 lg:gap-8"
-      >
-        <div class="flex flex-col gap-3">
-          <img
-            class="w-full h-auto object-cover rounded-xl bg-blend-screen"
-            src="https://assets-global.website-files.com/60358955e12a8aa033b99eed/6036d46fa92a90052220e3df_image-1-product-esports-template-p-500.png"
-            alt=""
-          />
-          <div
-            class="flex flex-col justify-center items-center gap-2 text-center px-2 lg:px-4"
-          >
-            <h3 class="uppercase font-semibold text-base md:text-lg">
-              ESPORTS TEAM SHIRT BLACK LINE
-            </h3>
-            <p class="text-primary-1 font-medium uppercase text-lg">
-              $ <span>19.99 </span>USD
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col gap-3">
-          <img
-            class="w-full h-auto object-cover rounded-xl bg-blend-screen"
-            src="https://assets-global.website-files.com/60358955e12a8aa033b99eed/6036d42f3249552a354d89d3_image-2-product-esports-template-p-500.png"
-            alt=""
-          />
-          <div
-            class="flex flex-col justify-center items-center gap-2 text-center px-2 lg:px-4"
-          >
-            <h3 class="uppercase font-semibold text-base md:text-lg">
-              ESPORTS TEAM SHIRT BLACK LINE
-            </h3>
-            <p class="text-primary-1 font-medium uppercase text-lg">
-              $ <span>19.99 </span>USD
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col gap-3">
-          <img
-            class="w-full h-auto object-cover rounded-xl bg-blend-screen"
-            src="https://assets-global.website-files.com/60358955e12a8aa033b99eed/6036d3c7c64ae1d8a32a13a5_image-3-product-esports-template-p-500.png"
-            alt=""
-          />
-          <div
-            class="flex flex-col justify-center items-center gap-2 text-center px-2 lg:px-4"
-          >
-            <h3 class="uppercase font-semibold text-base md:text-lg">
-              ESPORTS TEAM SHIRT BLACK LINE
-            </h3>
-            <p class="text-primary-1 font-medium uppercase text-lg">
-              $ <span>19.99 </span>USD
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col gap-3">
-          <img
-            class="w-full h-auto object-cover rounded-xl bg-blend-screen"
-            src="https://assets-global.website-files.com/60358955e12a8aa033b99eed/6036d372de6bc4d12a2e7a69_image-4-product-esports-template-p-500.png"
-            alt=""
-          />
-          <div
-            class="flex flex-col justify-center items-center gap-2 text-center px-2 lg:px-4"
-          >
-            <h3 class="uppercase font-semibold text-base md:text-lg">
-              ESPORTS TEAM SHIRT BLACK LINE
-            </h3>
-            <p class="text-primary-1 font-medium uppercase text-lg">
-              $ <span>19.99 </span>USD
-            </p>
-          </div>
-        </div>
-      </div>
+      ></div>
     </section>
 
     <!-- follow -->
@@ -541,139 +361,65 @@
         <h1
           class="font-black text-3xl md:text-[40px] leading-normal text-white"
         >
-          FOLLOW US ON <span class="uppercase text-primary-1">Github</span>
+          FOLLOW US ON <span class="uppercase text-green-500">Github</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et quis odio
-          vestibulum nunc, neque integer purus.
+          Create a GitHub Organization: If your team doesn't already have one,
+          create a GitHub organization specifically for your team. This will
+          serve as a centralized hub for all your team's projects and
+          repositories.
         </p>
       </div>
 
       <!-- post -->
       <div
+        id="post"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-8"
-      >
-        <div class="overflow-hidden relative rounded-xl group">
-          <figure>
-            <img
-              class="w-full h-auto object-cover rounded-xl"
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b708e2a43ff43aa946b_image-1-instagram-esports-template.jpg"
-              alt=""
-            />
-          </figure>
-          <div
-            class="group-hover:top-1/2 transition-all duration-300 ease-linear cursor-pointer flex justify-center items-center bg-primary-1/50 absolute -top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full h-full"
-          >
-            <i class="text-white text-[50px] font-black ri-github-fill"></i>
-          </div>
-        </div>
-        <div class="overflow-hidden relative rounded-xl group">
-          <figure>
-            <img
-              class="w-full h-auto object-cover rounded-xl"
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b708a74a47d39b46056_image-4-instagram-esports-template.jpg"
-              alt=""
-            />
-          </figure>
-          <div
-            class="group-hover:top-1/2 transition-all duration-300 ease-linear cursor-pointer flex justify-center items-center bg-primary-1/50 absolute -top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full h-full"
-          >
-            <i class="text-white text-[50px] font-black ri-github-fill"></i>
-          </div>
-        </div>
-        <div class="overflow-hidden relative rounded-xl group">
-          <figure>
-            <img
-              class="w-full h-auto object-cover rounded-xl"
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b70585da2e5a4df97a3_image-3-instagram-esports-template.jpg"
-              alt=""
-            />
-          </figure>
-          <div
-            class="group-hover:top-1/2 transition-all duration-300 ease-linear cursor-pointer flex justify-center items-center bg-primary-1/50 absolute -top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full h-full"
-          >
-            <i class="text-white text-[50px] font-black ri-github-fill"></i>
-          </div>
-        </div>
-        <div class="overflow-hidden relative rounded-xl group">
-          <figure>
-            <img
-              class="w-full h-auto object-cover rounded-xl"
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b707818036059a6a461_image-2-instagram-esports-template.jpg"
-              alt=""
-            />
-          </figure>
-          <div
-            class="group-hover:top-1/2 transition-all duration-300 ease-linear cursor-pointer flex justify-center items-center bg-primary-1/50 absolute -top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full h-full"
-          >
-            <i class="text-white text-[50px] font-black ri-github-fill"></i>
-          </div>
-        </div>
-      </div>
+      ></div>
     </section>
 
     <!-- footer -->
-    <footer class="">
+    <footer>
       <div class="container">
         <!-- footer top -->
         <div
-          class="grid grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-center text-center py-8 pb-10"
+          class="flex flex-col md:flex-row justify-between items-center gap-8 py-8 pb-10"
         >
           <!-- logo -->
-          <a
-            class="col-span-3 lg:col-span-1 flex justify-center"
-            href="./index.html"
-          >
-            <img
-              class="max-w-[200px]"
-              src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60359b25d811e171f69cedde_logo-esports-template.svg"
-              alt="logo"
-            />
+          <a href="./index.html">
+            <h1 class="text-2xl md:text-3xl font-black uppercase">
+              M<span class="text-primary-1 font-chakra-petch">Sports</span>
+            </h1>
           </a>
 
-          <!-- menu -->
-          <div class="flex flex-col gap-2">
-            <h2 class="text-primary-1 font-semibold uppercase">Pages</h2>
-            <ul class="font-medium flex flex-col gap-2">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <!-- menu -->
-          <div class="flex flex-col gap-2">
-            <h2 class="text-primary-1 font-semibold uppercase">Pages</h2>
-            <ul class="font-medium flex flex-col gap-2">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <!-- menu -->
-          <div class="flex flex-col gap-2">
-            <h2 class="text-primary-1 font-semibold uppercase">Pages</h2>
-            <ul class="font-medium flex flex-col gap-2">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
+          <!-- footer menu -->
+          <div
+            id="footer-menu"
+            class="grid grid-cols-1 md:grid-cols-2 justify-between gap-8"
+          ></div>
         </div>
         <!-- footer bottom -->
         <p
           class="py-8 text-center font-medium text-lg border-t-2 border-primary-1/20 border-dashed"
         >
-          Copyright &copy; eSports | Designed by Mehedi Hassan Miraj
+          Copyright &copy; eSports
+          <strong class="text-green-500"
+            >Designed by Mehedi Hassan Miraj</strong
+          >
+          <span id="footer-year" class="text-primary-1 font-semibold"></span>
         </p>
       </div>
     </footer>
     <!-- javascript -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/sponsored.js"></script>
+    <script src="./js/upcoming.js"></script>
+    <script src="./js/news-post.js"></script>
+    <script src="./js/article.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/follow.js"></script>
+    <script src="./js/footer-menu.js"></script>
+    <script src="./js/date.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
