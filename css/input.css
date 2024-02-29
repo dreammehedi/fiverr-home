@@ -5,6 +5,9 @@
   section {
     @apply py-12 md:py-20;
   }
+  button {
+    text-transform: uppercase;
+  }
 }
 @layer components {
   .btn {

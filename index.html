@@ -57,7 +57,7 @@
           <!-- mobile menu -->
           <ul
             id="mobile-menu"
-            class="transition-all duration-500 ease-linear lg:hidden w-1/3 h-screen fixed top-0 -left-full opacity-0 bg-green-500/90 shadow-xl shadow-primary-1 px-4 py-8 flex flex-col gap-4 font-chakra-petch font-semibold uppercase *:transition-all *:duration-300 *:ease-linear"
+            class="transition-all duration-500 ease-linear lg:hidden w-1/2 h-screen fixed top-0 -left-full opacity-0 bg-green-500/90 shadow-xl shadow-primary-1 px-4 py-8 flex flex-col gap-4 font-chakra-petch font-semibold uppercase *:transition-all *:duration-300 *:ease-linear"
           >
             <!-- mobile menu dynamic -->
           </ul>
@@ -270,6 +270,22 @@
         id="upcoming-match"
         class="flex flex-col justify-center items-center gap-8"
       ></div>
+
+      <div class="flex justify-center mt-8">
+        <button
+          onclick="showAllMatches()"
+          id="show-all-matches"
+          class="hidden group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+        >
+          <span
+            class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
+          ></span>
+          <span
+            class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
+            >Show All Matches
+          </span>
+        </button>
+      </div>
     </section>
 
     <!-- articles and news -->
@@ -303,6 +319,22 @@
         id="articles-news"
         class="mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-8"
       ></div>
+
+      <div class="flex justify-center mt-8">
+        <button
+          onclick="showAllPosts()"
+          id="show-all-posts"
+          class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+        >
+          <span
+            class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
+          ></span>
+          <span
+            class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
+            >Show All Posts
+          </span>
+        </button>
+      </div>
     </section>
 
     <!-- Support Our Team -->

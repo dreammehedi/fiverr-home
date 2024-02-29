@@ -1,4 +1,4 @@
-const upcomingContent = [
+let upcomingContent = [
   {
     bg: "https://img.freepik.com/free-vector/versus-vs-comparison-banner-with-light-streak_1017-33398.jpg?w=740&t=st=1709026290~exp=1709026890~hmac=fc625c73c01d689ac1368fdca3f69d61f7c76780b36eeeb67e6dcc824dab61f3",
     category: "Terra",
@@ -56,12 +56,20 @@ const upcomingContent = [
     },
   },
 ];
-
-const upcomingMatchid = document.getElementById("upcoming-match");
-
-upcomingMatchid.innerHTML = `${upcomingContent
-  .map((upcoming) => {
-    return `<div data-aos="zoom-in-up"
+const findMatches = (checkShowAllMatchesClick) => {
+  const upcomingMatchid = document.getElementById("upcoming-match");
+  // sort array
+  const showAllMacthesId = document.getElementById("show-all-matches");
+  let displayedMatches = upcomingContent;
+  if (displayedMatches.length > 2 && !checkShowAllMatchesClick) {
+    showAllMacthesId.classList.remove("hidden");
+    displayedMatches = displayedMatches.slice(0, 2);
+  } else {
+    showAllMacthesId.classList.add("hidden");
+  }
+  upcomingMatchid.innerHTML = `${displayedMatches
+    .map((upcoming) => {
+      return `<div data-aos="zoom-in-up"
 style="
   background-image: url(${upcoming.bg});
 "
@@ -103,5 +111,11 @@ class="group hover:scale-[1.01] transition-all duration-300 ease-linear cursor-p
   />
 </div>
 </div>`;
-  })
-  .join("")}`;
+    })
+    .join("")}`;
+};
+findMatches();
+// show all mathes
+const showAllMatches = () => {
+  findMatches(true);
+};
