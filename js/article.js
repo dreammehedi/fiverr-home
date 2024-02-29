@@ -44,7 +44,6 @@ const findArticle = (checkShowAllPostsClick) => {
   if (displayedArticle.length > 5 && !checkShowAllPostsClick) {
     showAllPostId.classList.remove("hidden");
     displayedArticle = displayedArticle.slice(0, 5);
-    console.log(displayedArticle);
   } else {
     showAllPostId.classList.add("hidden");
   }

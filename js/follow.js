@@ -41,10 +41,20 @@ const followContent = [
   },
 ];
 
-const postId = document.getElementById("post");
-postId.innerHTML = `${followContent
-  .map((post) => {
-    return `<div data-aos="${post.aos}" class="overflow-hidden relative rounded-xl group">
+const findFollow = (checkShowAllMatchesClick) => {
+  const postId = document.getElementById("post");
+  const showAllFollowsId = document.getElementById("show-all-follows");
+  // sort array
+  let displayedFollow = followContent;
+  if (displayedFollow.length > 5 && !checkShowAllMatchesClick) {
+    showAllFollowsId.classList.remove("hidden");
+    displayedFollow = displayedFollow.slice(0, 5);
+  } else {
+    showAllFollowsId.classList.add("hidden");
+  }
+  postId.innerHTML = `${displayedFollow
+    .map((post) => {
+      return `<div data-aos="${post.aos}" class="overflow-hidden relative rounded-xl group">
     <figure>
       <img
         class="w-full h-auto md:h-[300px]  object-cover rounded-xl"
@@ -58,5 +68,11 @@ postId.innerHTML = `${followContent
       <i class="text-white text-[50px] font-black ${post.icon}"></i>
     </div>
   </div>`;
-  })
-  .join("")}`;
+    })
+    .join("")}`;
+};
+findFollow();
+
+const showAllFollows = () => {
+  findFollow(true);
+};

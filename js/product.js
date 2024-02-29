@@ -49,10 +49,21 @@ const productContent = [
   },
 ];
 
-const productDetailesId = document.getElementById("product-detailes");
-productDetailesId.innerHTML = `${productContent
-  .map((product) => {
-    return `<div data-aos="${product.aos}" class="flex flex-col gap-3">
+const findProducts = (checkShowAllMatchesClick) => {
+  const productDetailesId = document.getElementById("product-detailes");
+  const showAllProductsId = document.getElementById("show-all-products");
+  // sort array
+  let displayedProducts = productContent;
+  if (displayedProducts.length > 4 && !checkShowAllMatchesClick) {
+    showAllProductsId.classList.remove("hidden");
+    displayedProducts = displayedProducts.slice(0, 4);
+  } else {
+    showAllProductsId.classList.add("hidden");
+  }
+
+  productDetailesId.innerHTML = `${displayedProducts
+    .map((product) => {
+      return `<div data-aos="${product.aos}" class="flex flex-col gap-3">
 <figure class="overflow-hidden rounded-xl">
 <img
   class="w-full h-auto md:h-[300px] cursor-pointer transition-all duration-300 ease-linear hover:scale-[1.05] object-cover rounded-xl bg-blend-screen"
@@ -71,5 +82,11 @@ productDetailesId.innerHTML = `${productContent
   </p>
 </div>
 </div>`;
-  })
-  .join("")}`;
+    })
+    .join("")}`;
+};
+
+findProducts();
+const showAllProducts = () => {
+  findProducts(true);
+};
