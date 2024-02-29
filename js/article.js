@@ -1,4 +1,4 @@
-const articleContent = [
+let articleContent = [
   {
     aos: "fade-up",
     img: "https://img.freepik.com/free-photo/view-neon-illuminated-gaming-desk-setup-with-keyboard_23-2149529379.jpg?w=740&t=st=1709026623~exp=1709027223~hmac=6443c29f16f1bcfe6dc8c085a0973181b314b5fe370ab137ab70040e67a6dc6f",
@@ -35,12 +35,22 @@ const articleContent = [
     imgTitle: "THE BEST KEYBOARD FOR HIGH-END GAMING",
   },
 ];
+const findArticle = (checkShowAllPostsClick) => {
+  const articleNewsId = document.getElementById("articles-news");
+  const showAllPostId = document.getElementById("show-all-posts");
+  // sort array
+  let displayedArticle = articleContent;
 
-const articleNewsId = document.getElementById("articles-news");
-
-articleNewsId.innerHTML = `${articleContent
-  .map((article) => {
-    return `<div data-aos="${article.aos}" class="flex flex-col gap-3">
+  if (displayedArticle.length > 5 && !checkShowAllPostsClick) {
+    showAllPostId.classList.remove("hidden");
+    displayedArticle = displayedArticle.slice(0, 5);
+    console.log(displayedArticle);
+  } else {
+    showAllPostId.classList.add("hidden");
+  }
+  articleNewsId.innerHTML = `${displayedArticle
+    .map((article) => {
+      return `<div data-aos="${article.aos}" class="flex flex-col gap-3">
     <figure class="overflow-hidden rounded-xl">
       <img
         class="w-full h-auto object-cover cursor-pointer transition-all duration-300 ease-linear hover:scale-[1.05]"
@@ -52,5 +62,11 @@ articleNewsId.innerHTML = `${articleContent
       ${article.imgTitle}
     </figcaption>
   </div>`;
-  })
-  .join("")}`;
+    })
+    .join("")}`;
+};
+
+findArticle();
+const showAllPosts = () => {
+  findArticle(true);
+};
