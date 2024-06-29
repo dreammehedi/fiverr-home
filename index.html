@@ -32,13 +32,97 @@
       <!-- navbar start -->
       <nav class="container flex justify-between items-center gap-4">
         <!-- humberger menu -->
-        <div class="md:hidden text-[#74767E]">
+        <div
+          onclick="showMobileMenu()"
+          class="humberger_menu_btn md:hidden text-[#74767E] cursor-pointer"
+        >
           <i class="ri-menu-line text-3xl cursor-pointer font-bold"></i>
         </div>
 
+        <!-- mobile device menu -->
+        <div
+          id="mobile_menu"
+          class="hidden lg:hidden transition-all duration-300 ease-linear bg-white fixed top-0 left-0 h-screen w-2/3 z-[9999] space-y-4 p-4"
+        >
+          <button
+            class="font-semibold px-4 py-2 rounded-md bg-black text-white text-xl transition-all duration-300 ease-linear hover:opacity-70"
+          >
+            Join Fiverr
+          </button>
+          <!-- mobile menu top -->
+          <ul class="flex flex-col space-y-4">
+            <li
+              class="transition-all cursor-pointer duration-300 ease-linear hover:bg-[#F5F5F5] rounded-md px-4 py-2 text-[18px] text-[#74767E]"
+            >
+              Sign In
+            </li>
+            <li
+              class="transition-all cursor-pointer duration-300 ease-linear hover:bg-[#F5F5F5] rounded-md px-4 py-2 text-[18px] text-[#74767E] flex justify-between items-center"
+            >
+              Browse categories
+              <i
+                class="ri-arrow-down-s-line text-xl font-semibold text-black"
+              ></i>
+            </li>
+            <li
+              class="transition-all cursor-pointer duration-300 ease-linear hover:bg-[#F5F5F5] rounded-md px-4 py-2 text-[18px] text-[#74767E] flex justify-between items-center"
+            >
+              Explore
+              <i
+                class="ri-arrow-down-s-line text-xl font-semibold text-black"
+              ></i>
+            </li>
+            <li
+              class="transition-all cursor-pointer duration-300 ease-linear hover:bg-[#F5F5F5] rounded-md px-4 py-2 text-[18px] text-black flex justify-between items-center font-bold"
+            >
+              Fiverr Pro
+              <i
+                class="ri-arrow-down-s-line text-xl font-semibold text-black"
+              ></i>
+            </li>
+          </ul>
+
+          <p
+            class="text-[18px] text-black flex justify-between items-center font-bold px-4"
+          >
+            General
+          </p>
+
+          <!-- mobile menu bottom -->
+          <ul class="flex flex-col space-y-4">
+            <li
+              class="transition-all cursor-pointer duration-300 ease-linear hover:bg-[#F5F5F5] rounded-md px-4 py-2 text-[18px] text-[#74767E]"
+            >
+              Home
+            </li>
+            <li
+              class="transition-all cursor-pointer duration-300 ease-linear hover:bg-[#F5F5F5] rounded-md px-4 py-2 text-[18px] text-[#74767E] flex justify-between items-center"
+            >
+              <p class="flex items-center gap-x-2">
+                English <i class="ri-global-line text-base"></i>
+              </p>
+              <i
+                class="ri-arrow-down-s-line text-xl font-semibold text-black"
+              ></i>
+            </li>
+            <li
+              class="transition-all cursor-pointer duration-300 ease-linear hover:bg-[#F5F5F5] rounded-md px-4 py-2 text-[18px] text-[#74767E] flex justify-between items-center"
+            >
+              $ USD
+              <i
+                class="ri-arrow-down-s-line text-xl font-semibold text-black"
+              ></i>
+            </li>
+          </ul>
+        </div>
+
+        <!-- humberger menu, logo, form, etc -->
         <div class="flex items-center gap-4 lg:w-full">
           <!-- humberger menu -->
-          <div class="hidden md:inline-block lg:hidden text-[#74767E]">
+          <div
+            onclick="showMobileMenu()"
+            class="humberger_menu_btn hidden md:inline-block lg:hidden text-[#74767E]"
+          >
             <i class="ri-menu-line text-3xl cursor-pointer font-bold"></i>
           </div>
 
@@ -956,5 +1040,19 @@
       </section>
     </footer>
     <!-- footer end -->
+
+    <script>
+      const mobileMenu = document.getElementById("mobile_menu");
+      const showMobileMenu = () => {
+        mobileMenu.classList.remove("hidden");
+      };
+      document.addEventListener("click", function (e) {
+        const isClickInsideMenu = mobileMenu.contains(e.target);
+        const isClickOnHamburger = e.target.closest(".humberger_menu_btn");
+        if (!isClickInsideMenu && !isClickOnHamburger) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    </script>
   </body>
 </html>

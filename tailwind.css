@@ -651,6 +651,10 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-\[-2px\] {
   right: -2px;
 }
@@ -661,6 +665,10 @@ video {
 
 .right-\[3px\] {
   right: 3px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-1\/2 {
@@ -681,6 +689,10 @@ video {
 
 .isolation-auto {
   isolation: auto;
+}
+
+.z-\[9999\] {
+  z-index: 9999;
 }
 
 .float-start {
@@ -868,6 +880,14 @@ video {
 
 .h-\[60px\] {
   height: 60px;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-\[90px\] {
@@ -1462,6 +1482,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -2089,6 +2115,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2217,6 +2247,10 @@ video {
   font-size: 15px;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2225,6 +2259,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -2359,6 +2398,11 @@ video {
 .text-\[\#b5b6ba\] {
   --tw-text-opacity: 1;
   color: rgb(181 182 186 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -2799,6 +2843,10 @@ video {
   text-decoration-line: underline;
 }
 
+.hover\:opacity-70:hover {
+  opacity: 0.7;
+}
+
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
@@ -2840,10 +2888,6 @@ video {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-\[170px\] {
-    height: 170px;
   }
 
   .md\:h-\[200px\] {
@@ -2900,16 +2944,12 @@ video {
     display: none;
   }
 
-  .lg\:h-\[180px\] {
-    height: 180px;
+  .lg\:h-\[170px\] {
+    height: 170px;
   }
 
   .lg\:h-auto {
     height: auto;
-  }
-
-  .lg\:h-\[170px\] {
-    height: 170px;
   }
 
   .lg\:w-full {
