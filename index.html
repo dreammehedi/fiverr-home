@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Mehedi Hassan Miraj" />
-    <meta
-      name="description"
-      content="This is a sport e-commerce website selling various athletic products and gear."
-    />
-    <meta
-      name="keywords"
-      content="sport, e-commerce, athletic products, gear"
-    />
-    <title>Sport | Mehedi Hassan Miraj |</title>
+
+    <title>Fiverr | Home</title>
     <!-- favicon -->
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,480 +23,938 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- AOS animation added -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- tailwind css -->
     <link rel="stylesheet" href="./tailwind.css" />
   </head>
-  <body class="font-barlow bg-black text-white">
-    <!-- header -->
-    <header
-      style="
-        background-image: url(https://img.freepik.com/free-photo/gaming-setup-arrangement-high-angle_23-2149680232.jpg?w=740&t=st=1709026183~exp=1709026783~hmac=f8500d9284340cd1bc4bbddcc6735838be7784db46d8adeb6a0a127a7bda1a71);
-      "
-      class="w-full h-auto bg-no-repeat bg-cover bg-center"
-    >
-      <!-- nav -->
-      <div id="nav" class="transition-all duration-200 ease-linear">
-        <nav
-          class="container w-full h-auto py-2 flex justify-between items-center text-white"
-        >
-          <!-- logo -->
-          <a href="./index.html">
-            <h1 class="text-2xl md:text-3xl font-black uppercase">
-              M<span class="text-primary-1 font-chakra-petch">Sports</span>
-            </h1>
-          </a>
-          <!-- mobile menu -->
-          <ul
-            id="mobile-menu"
-            class="transition-all duration-500 ease-linear lg:hidden w-1/2 h-screen fixed top-0 -left-full opacity-0 bg-green-500/90 shadow-xl shadow-primary-1 px-4 py-8 flex flex-col gap-4 font-chakra-petch font-semibold uppercase *:transition-all *:duration-300 *:ease-linear"
-          >
-            <!-- mobile menu dynamic -->
-          </ul>
-          <!-- menu -->
-          <ul
-            id="desktop-menu"
-            class="hidden lg:flex text-green-500 justify-between items-center gap-4 font-chakra-petch font-semibold uppercase *:transition-all *:duration-300 *:ease-linear"
-          >
-            <!-- desktop menu dynamic -->
-          </ul>
-          <!-- cart & button & toggle menu -->
-          <div class="flex justify-between items-center gap-6">
-            <button
-              class="group relative min-h-[50px] w-20 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-            >
-              <span
-                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-              ></span>
-              <span
-                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-                >Cart
-                <span
-                  class="font-black flex justify-center items-center w-2 h-2 p-2 rounded-xl text-xs absolute top-1/3 -translate-y-1/3 right-[10px]"
-                  >0</span
-                ></span
-              >
-            </button>
-            <button
-              class="group hidden lg:flex relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-            >
-              <span
-                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-              ></span>
-              <span
-                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-                >Buy February</span
-              >
-            </button>
-            <!-- toggle menu -->
-            <i
-              id="toggle-btn"
-              class="lg:hidden font-black text-3xl cursor-pointer ri-menu-4-fill"
-            ></i>
-          </div>
-        </nav>
-      </div>
-
-      <!-- banner -->
-      <div
-        data-aos="fade-bottom"
-        class="container min-h-[400px] md:min-h-[400px] lg:h-[500px] h-full flex items-center"
-      >
-        <div
-          class="flex flex-col justify-center items-center text-center md:text-left md:items-start gap-4 w-full h-auto lg:max-w-xl"
-        >
-          <h1
-            class="font-black text-3xl md:text-[40px] leading-normal text-white"
-          >
-            <span class="text-green-500">NEXT</span>-GENERATION
-            <span class="text-primary-1">ESPORTS</span>
-            <span class="text-green-500">TEAM</span>
-          </h1>
-          <p>
-            Seek sponsorship deals with gaming hardware brands, energy drink
-            companies, and other relevant brands. Negotiate partnerships with
-            esports organizations, gaming platforms, and event organizers for
-            exposure and support. Develop mutually beneficial relationships that
-            provide financial backing and promotional opportunities.
-          </p>
-          <div
-            class="flex flex-wrap md:flex-nowrap justify-evenly md:justify-between items-center gap-6"
-          >
-            <button
-              class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-            >
-              <span
-                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-              ></span>
-              <span
-                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-                >Buy February</span
-              >
-            </button>
-            <button
-              class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-            >
-              <span
-                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-              ></span>
-              <span
-                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-                >Cart</span
-              >
-            </button>
-            <button
-              class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-            >
-              <span
-                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-              ></span>
-              <span
-                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-                >Meet The Team</span
-              >
-            </button>
-          </div>
+  <body class="font-inter">
+    <!-- header start -->
+    <header class="mb-4 border-b xl:border-0 xl:mb-0 border-[#EFEFF0]">
+      <!-- navbar start -->
+      <nav class="container flex justify-between items-center gap-4">
+        <!-- humberger menu -->
+        <div class="md:hidden text-[#74767E]">
+          <i class="ri-menu-line text-3xl cursor-pointer font-bold"></i>
         </div>
-      </div>
+
+        <div class="flex items-center gap-4 lg:w-full">
+          <!-- humberger menu -->
+          <div class="hidden md:inline-block lg:hidden text-[#74767E]">
+            <i class="ri-menu-line text-3xl cursor-pointer font-bold"></i>
+          </div>
+
+          <!-- logo -->
+          <a href="https://www.fiverr.com/" target="_blank">
+            <img
+              class="lg:flex-grow-0 w-[90px] h-[60px] lg:h-auto object-cover"
+              src="./images/fiverr-logo.png"
+              alt="fiver logo"
+            />
+          </a>
+
+          <!-- search bar -->
+          <form
+            class="flex-grow hidden lg:flex w-full items-center relative overflow-hidden"
+          >
+            <input
+              type="text"
+              class="!pr-10 border border-[#EFEFF0] px-3 py-2 rounded-md w-full focus:outline-none focus:border-black"
+              placeholder="What service are you looking for today?"
+            />
+            <button
+              class="absolute top-1/2 right-[0px] -translate-y-1/2 bg-black px-3 py-2 rounded-md rounded-tl-none rounded-bl-none"
+            >
+              <i class="ri-search-line text-white"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- sign in & login button -->
+        <div class="lg:hidden flex justify-end items-center gap-3">
+          <button
+            class="md:hidden font-semibold text-[#74767E] transition-all duration-300 ease-linear hover:text-[#1DBF73]"
+          >
+            Join
+          </button>
+          <button
+            class="hidden md:inline-block font-semibold text-[#74767E] transition-all duration-300 ease-linear hover:text-[#1DBF73]"
+          >
+            Sign in
+          </button>
+          <button
+            class="hidden md:inline-block font-semibold text-[#1DBF73] border border-[#1DBF73] rounded-md px-2 py-1 transition-all duration-300 ease-linear hover:text-white hover:bg-[#1DBF73]"
+          >
+            Join
+          </button>
+        </div>
+
+        <!-- website important icons and links -->
+        <ul class="hidden w-full lg:flex justify-end items-center gap-3">
+          <li><i class="ri-notification-3-fill text-[#74767E]"></i></li>
+          <li><i class="ri-discuss-line text-[#74767E]"></i></li>
+          <li><i class="ri-heart-line text-[#74767E]"></i></li>
+          <li><button class="font-semibold text-[#74767E]">Orders</button></li>
+          <li>
+            <button class="text-[#1DBF73] font-semibold">
+              Switching to Selling
+            </button>
+          </li>
+          <li class="relative">
+            <img
+              class="size-[35px] object-cover rounded-full"
+              src="./images/person.png"
+              alt="person"
+            />
+            <span
+              class="size-[10px] bg-[#1DBF73] rounded-full border-2 border-white absolute right-[-2px] top-[8px]"
+            ></span>
+          </li>
+        </ul>
+      </nav>
+      <!-- navbar end -->
     </header>
+    <!-- header end -->
 
-    <!-- SPONSORED BY -->
-    <section class="bg-black">
-      <div
-        class="container flex flex-col lg:flex-row justify-center md:justify-between items-center gap-8 md:gap-12"
-      >
-        <h2
-          data-aos="fade-right"
-          class="text-2xl font-black uppercase text-white"
+    <!-- category start -->
+    <section class="hidden xl:flex border-t border-b border-[#EFEFF0] mb-6">
+      <ul class="container flex justify-between items-center gap-3 *:py-2">
+        <li
+          class="text-[#62646a] border-b-2 border-transparent transition-all duration-300 ease-linear hover:border-b-2 hover:border-[#3BC384]"
         >
-          SPONSORED BY
-        </h2>
-        <!-- SPONSORED BY LOGO -->
-        <div
-          data-aos="fade-left"
-          id="sponsored"
-          class="flex-1 flex flex-wrap justify-evenly lg:justify-between items-center gap-8 *:transition-all *:duration-300 *:ease-linear"
+          <a href="#">Graphics & Design</a>
+        </li>
+        <li
+          class="text-[#62646a] border-b-2 border-transparent transition-all duration-300 ease-linear hover:border-b-2 hover:border-[#3BC384]"
         >
-          <!-- sponsored logo -->
-        </div>
-      </div>
+          <a href="#">Programming & Tech</a>
+        </li>
+        <li
+          class="text-[#62646a] border-b-2 border-transparent transition-all duration-300 ease-linear hover:border-b-2 hover:border-[#3BC384]"
+        >
+          <a href="#">Digital Marketing</a>
+        </li>
+        <li
+          class="text-[#62646a] border-b-2 border-transparent transition-all duration-300 ease-linear hover:border-b-2 hover:border-[#3BC384]"
+        >
+          <a href="#">Video & Animation</a>
+        </li>
+        <li
+          class="text-[#62646a] border-b-2 border-transparent transition-all duration-300 ease-linear hover:border-b-2 hover:border-[#3BC384]"
+        >
+          <a href="#">Writing & Translation</a>
+        </li>
+        <li
+          class="text-[#62646a] border-b-2 border-transparent transition-all duration-300 ease-linear hover:border-b-2 hover:border-[#3BC384]"
+        >
+          <a href="#">Music & Audio</a>
+        </li>
+        <li
+          class="text-[#62646a] border-b-2 border-transparent transition-all duration-300 ease-linear hover:border-b-2 hover:border-[#3BC384]"
+        >
+          <a href="#">Consulting</a>
+        </li>
+        <li
+          class="text-[#62646a] border-b-2 border-transparent transition-all duration-300 ease-linear hover:border-b-2 hover:border-[#3BC384]"
+        >
+          <a href="#">Data</a>
+        </li>
+        <li
+          class="text-[#62646a] border-b-2 border-transparent transition-all duration-300 ease-linear hover:border-b-2 hover:border-[#3BC384]"
+        >
+          <a href="#">AI Services</a>
+        </li>
+      </ul>
     </section>
+    <!-- category end -->
 
-    <!-- about team -->
-    <section class="container overflow-hidden">
-      <div
-        class="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-8"
-      >
-        <!-- about team info -->
+    <!-- most popular gig in app design start -->
+    <main>
+      <section class="container">
+        <h2 class="pb-4 text-2xl font-bold text-[#404145]">
+          Most popular Gigs in <span class="text-[#446EE7]">App Design</span>
+        </h2>
+
         <div
-          data-aos="fade-right"
-          class="flex flex-col justify-center items-center text-center md:text-left md:items-start gap-4"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
         >
-          <h1
-            class="font-black text-3xl md:text-[40px] leading-normal text-white"
-          >
-            ABOUT THE DRAGON <span class="text-green-500">ESPORTS</span> TEAM
-          </h1>
-          <p>
-            The Dragon eSports Team is a next-generation powerhouse in the world
-            of competitive gaming. Founded on the principles of dedication,
-            skill, and innovation, our team stands at the forefront of eSports
-            excellence.
-          </p>
-          <div class="flex justify-between items-center gap-6">
-            <button
-              class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-            >
-              <span
-                class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-              ></span>
-              <span
-                class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-                >Buy February</span
+          <div>
+            <img
+              src="./images/gig-image.png"
+              class="w-full h-[300px] md:h-[200px] lg:h-[170px] object-cover"
+              alt="Gig image"
+            />
+            <div class="border border-[#EFEFF0] p-2">
+              <div class="flex items-center gap-x-2">
+                <div class="relative">
+                  <img
+                    class="size-[35px] object-cover rounded-full"
+                    src="./images/person.png"
+                    alt="person"
+                  />
+                  <span
+                    class="size-[10px] bg-[#1DBF73] rounded-full border-2 border-white absolute right-[3px] top-[0px]"
+                  ></span>
+                </div>
+                <div>
+                  <h5 class="text-[#222325] font-semibold text-sm">
+                    bunlidesign
+                  </h5>
+                  <p class="text-[#74767E]">Level 1 Seler</p>
+                </div>
+              </div>
+              <h3 class="text-[#222325] font-medium text-base">
+                I will design mobile app UI/UX
+              </h3>
+              <p
+                class="pt-4 pb-2 text-[#FFBE5B] font-semibold flex items-center gap-x-1 text-sm"
               >
-            </button>
+                <i class="ri-star-fill"></i> 4.9
+                <span class="text-[#B5B6BA]">(7)</span>
+              </p>
+              <div
+                class="border-t border-[#EFEFF0] py-2 flex justify-between items-center"
+              >
+                <div>
+                  <button><i class="ri-menu-line text-[#B5B6BA]"></i></button>
+                  <button><i class="ri-heart-fill text-[#B5B6BA]"></i></button>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center text-center"
+                >
+                  <h4 class="text-[#74767E] uppercase font-semibold text-sm">
+                    Starting At
+                  </h4>
+                  <p
+                    class="text-[#404145] text-sm font-semibold flex items-center"
+                  >
+                    <img
+                      class="size-[16px] object-cover"
+                      src="./images/rupee.png"
+                      alt=""
+                    />
+                    26,020
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./images/gig-image.png"
+              class="w-full h-[300px] md:h-[200px] lg:h-[170px] object-cover"
+              alt="Gig image"
+            />
+            <div class="border border-[#EFEFF0] p-2">
+              <div class="flex items-center gap-x-2">
+                <div class="relative">
+                  <img
+                    class="size-[35px] object-cover rounded-full"
+                    src="./images/person.png"
+                    alt="person"
+                  />
+                  <span
+                    class="size-[10px] bg-[#1DBF73] rounded-full border-2 border-white absolute right-[3px] top-[0px]"
+                  ></span>
+                </div>
+                <div>
+                  <h5 class="text-[#222325] font-semibold text-sm">
+                    bunlidesign
+                  </h5>
+                  <p class="text-[#74767E]">Level 1 Seler</p>
+                </div>
+              </div>
+              <h3 class="text-[#222325] font-medium text-base">
+                I will design mobile app UI/UX
+              </h3>
+              <p
+                class="pt-4 pb-2 text-[#FFBE5B] font-semibold flex items-center gap-x-1 text-sm"
+              >
+                <i class="ri-star-fill"></i> 4.9
+                <span class="text-[#B5B6BA]">(7)</span>
+              </p>
+              <div
+                class="border-t border-[#EFEFF0] py-2 flex justify-between items-center"
+              >
+                <div>
+                  <button><i class="ri-menu-line text-[#B5B6BA]"></i></button>
+                  <button><i class="ri-heart-fill text-[#B5B6BA]"></i></button>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center text-center"
+                >
+                  <h4 class="text-[#74767E] uppercase font-semibold text-sm">
+                    Starting At
+                  </h4>
+                  <p
+                    class="text-[#404145] text-sm font-semibold flex items-center"
+                  >
+                    <img
+                      class="size-[16px] object-cover"
+                      src="./images/rupee.png"
+                      alt=""
+                    />
+                    26,020
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./images/gig-image.png"
+              class="w-full h-[300px] md:h-[200px] lg:h-[170px] object-cover"
+              alt="Gig image"
+            />
+            <div class="border border-[#EFEFF0] p-2">
+              <div class="flex items-center gap-x-2">
+                <div class="relative">
+                  <img
+                    class="size-[35px] object-cover rounded-full"
+                    src="./images/person.png"
+                    alt="person"
+                  />
+                  <span
+                    class="size-[10px] bg-[#1DBF73] rounded-full border-2 border-white absolute right-[3px] top-[0px]"
+                  ></span>
+                </div>
+                <div>
+                  <h5 class="text-[#222325] font-semibold text-sm">
+                    bunlidesign
+                  </h5>
+                  <p class="text-[#74767E]">Level 1 Seler</p>
+                </div>
+              </div>
+              <h3 class="text-[#222325] font-medium text-base">
+                I will design mobile app UI/UX
+              </h3>
+              <p
+                class="pt-4 pb-2 text-[#FFBE5B] font-semibold flex items-center gap-x-1 text-sm"
+              >
+                <i class="ri-star-fill"></i> 4.9
+                <span class="text-[#B5B6BA]">(7)</span>
+              </p>
+              <div
+                class="border-t border-[#EFEFF0] py-2 flex justify-between items-center"
+              >
+                <div>
+                  <button><i class="ri-menu-line text-[#B5B6BA]"></i></button>
+                  <button><i class="ri-heart-fill text-[#B5B6BA]"></i></button>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center text-center"
+                >
+                  <h4 class="text-[#74767E] uppercase font-semibold text-sm">
+                    Starting At
+                  </h4>
+                  <p
+                    class="text-[#404145] text-sm font-semibold flex items-center"
+                  >
+                    <img
+                      class="size-[16px] object-cover"
+                      src="./images/rupee.png"
+                      alt=""
+                    />
+                    26,020
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./images/gig-image.png"
+              class="w-full h-[300px] md:h-[200px] lg:h-[170px] object-cover"
+              alt="Gig image"
+            />
+            <div class="border border-[#EFEFF0] p-2">
+              <div class="flex items-center gap-x-2">
+                <div class="relative">
+                  <img
+                    class="size-[35px] object-cover rounded-full"
+                    src="./images/person.png"
+                    alt="person"
+                  />
+                  <span
+                    class="size-[10px] bg-[#1DBF73] rounded-full border-2 border-white absolute right-[3px] top-[0px]"
+                  ></span>
+                </div>
+                <div>
+                  <h5 class="text-[#222325] font-semibold text-sm">
+                    bunlidesign
+                  </h5>
+                  <p class="text-[#74767E]">Level 1 Seler</p>
+                </div>
+              </div>
+              <h3 class="text-[#222325] font-medium text-base">
+                I will design mobile app UI/UX
+              </h3>
+              <p
+                class="pt-4 pb-2 text-[#FFBE5B] font-semibold flex items-center gap-x-1 text-sm"
+              >
+                <i class="ri-star-fill"></i> 4.9
+                <span class="text-[#B5B6BA]">(7)</span>
+              </p>
+              <div
+                class="border-t border-[#EFEFF0] py-2 flex justify-between items-center"
+              >
+                <div>
+                  <button><i class="ri-menu-line text-[#B5B6BA]"></i></button>
+                  <button><i class="ri-heart-fill text-[#B5B6BA]"></i></button>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center text-center"
+                >
+                  <h4 class="text-[#74767E] uppercase font-semibold text-sm">
+                    Starting At
+                  </h4>
+                  <p
+                    class="text-[#404145] text-sm font-semibold flex items-center"
+                  >
+                    <img
+                      class="size-[16px] object-cover"
+                      src="./images/rupee.png"
+                      alt=""
+                    />
+                    26,020
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./images/gig-image.png"
+              class="w-full h-[300px] md:h-[200px] lg:h-[170px] object-cover"
+              alt="Gig image"
+            />
+            <div class="border border-[#EFEFF0] p-2">
+              <div class="flex items-center gap-x-2">
+                <div class="relative">
+                  <img
+                    class="size-[35px] object-cover rounded-full"
+                    src="./images/person.png"
+                    alt="person"
+                  />
+                  <span
+                    class="size-[10px] bg-[#1DBF73] rounded-full border-2 border-white absolute right-[3px] top-[0px]"
+                  ></span>
+                </div>
+                <div>
+                  <h5 class="text-[#222325] font-semibold text-sm">
+                    bunlidesign
+                  </h5>
+                  <p class="text-[#74767E]">Level 1 Seler</p>
+                </div>
+              </div>
+              <h3 class="text-[#222325] font-medium text-base">
+                I will design mobile app UI/UX
+              </h3>
+              <p
+                class="pt-4 pb-2 text-[#FFBE5B] font-semibold flex items-center gap-x-1 text-sm"
+              >
+                <i class="ri-star-fill"></i> 4.9
+                <span class="text-[#B5B6BA]">(7)</span>
+              </p>
+              <div
+                class="border-t border-[#EFEFF0] py-2 flex justify-between items-center"
+              >
+                <div>
+                  <button><i class="ri-menu-line text-[#B5B6BA]"></i></button>
+                  <button><i class="ri-heart-fill text-[#B5B6BA]"></i></button>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center text-center"
+                >
+                  <h4 class="text-[#74767E] uppercase font-semibold text-sm">
+                    Starting At
+                  </h4>
+                  <p
+                    class="text-[#404145] text-sm font-semibold flex items-center"
+                  >
+                    <img
+                      class="size-[16px] object-cover"
+                      src="./images/rupee.png"
+                      alt=""
+                    />
+                    26,020
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
+    <!-- most popular gig in app design end -->
 
-        <!-- about team video -->
-        <div data-aos="fade-left" class="relative">
-          <div
-            class="absolute w-full h-full bg-primary-1/60 top-10 -left-10 -z-10 rounded-xl"
-          ></div>
-          <video
-            class="rounded-xl w-full h-auto"
-            controls
-            loop
-            muted
-            src="https://www.shutterstock.com/shutterstock/videos/1056908843/preview/stock-footage-professional-video-games-player-tournament-winner-celebrates-victory-cheering-and-holding-trophy.webm"
-          ></video>
+    <!-- footer start -->
+    <footer class="bg-white pt-6 md:pt-8">
+      <!-- footer top -->
+      <section
+        class="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 pb-6 md:pb-8"
+      >
+        <!-- Categories -->
+        <div class="space-y-2">
+          <h4 class="text-[#404145] font-bold pb-6">Categories</h4>
+          <ul class="space-y-2">
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Graphics & Design</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Digital Marketing</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Writing & Translation</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Video & Animation</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Music & Audio</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Fiverr Logo Maker</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Programming & Tech</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Data</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Business</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Lifestyle</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Photography</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >End-to-End</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Sitemap</a
+              >
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
 
-    <!-- upcoming match -->
-    <section class="container">
-      <!-- upcoming matches content -->
-      <div
-        data-aos="zoom-in"
-        class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-2xl mx-auto mb-8"
-      >
-        <h1
-          class="font-black text-3xl md:text-[40px] leading-normal text-white"
-        >
-          <span class="text-green-500">UPCOMING</span> MATCHES
-        </h1>
-        <p>
-          As of my last update in January 2024, I don't have access to real-time
-          data such as upcoming matches for specific eSports teams. To find
-          information about upcoming matches for the Dragon eSports Team or any
-          other team, I recommend checking official eSports websites, team
-          social media accounts, or specialized eSports news websites. These
-          platforms typically provide up-to-date schedules, match listings, and
-          other relevant information about upcoming matches and tournaments.
-        </p>
-      </div>
-
-      <!-- upcoming detailes -->
-      <div
-        id="upcoming-match"
-        class="flex flex-col justify-center items-center gap-8"
-      ></div>
-
-      <div class="flex justify-center mt-8">
-        <button
-          onclick="showAllMatches()"
-          id="show-all-matches"
-          class="hidden group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-        >
-          <span
-            class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-          ></span>
-          <span
-            class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-            >Show All Matches
-          </span>
-        </button>
-      </div>
-    </section>
-
-    <!-- articles and news -->
-    <section class="container">
-      <!-- articles and news content -->
-      <div
-        data-aos="zoom-in"
-        class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-2xl mx-auto mb-8"
-      >
-        <h1
-          class="font-black text-3xl md:text-[40px] leading-normal text-green-500"
-        >
-          ARTICLES <span class="text-primary-1">AND</span> NEWS
-        </h1>
-        <p>
-          TheScore eSports: TheScore offers comprehensive coverage of eSports
-          news, scores, and updates across different games and tournaments. Dot
-          Esports: Dot Esports is a leading eSports news website providing
-          coverage of breaking news, features, and analysis across the eSports
-          industry.
-        </p>
-      </div>
-
-      <!-- news post -->
-      <div
-        id="news-post"
-        class="grid grid-cols-1 lg:grid-cols-2 justify-between gap-6 lg:gap-8"
-      ></div>
-      <!-- grid news post -->
-      <div
-        id="articles-news"
-        class="mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-8"
-      ></div>
-
-      <div class="flex justify-center mt-8">
-        <button
-          onclick="showAllPosts()"
-          id="show-all-posts"
-          class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-        >
-          <span
-            class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-          ></span>
-          <span
-            class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-            >Show All Posts
-          </span>
-        </button>
-      </div>
-    </section>
-
-    <!-- Support Our Team -->
-    <section
-      style="
-        background-image: url(https://img.freepik.com/free-photo/view-neon-illuminated-gaming-desk-setup-with-keyboard_23-2149529379.jpg?w=740&t=st=1709026623~exp=1709027223~hmac=6443c29f16f1bcfe6dc8c085a0973181b314b5fe370ab137ab70040e67a6dc6f);
-      "
-      class="bg-no-repeat bg-center bg-cover"
-    >
-      <div
-        data-aos="zoom-in"
-        class="container flex flex-col lg:flex-row text-center lg:text-left justify-center lg:justify-between items-center gap-4 py-6 md:py-10"
-      >
-        <div class="flex flex-col gap-3 w-full md:max-w-2xl">
-          <h1 class="uppercase font-bold text-2xl md:text-4xl">
-            GET OUR <span class="text-green-500">MERCH</span> & SUPPORT
-            <span class="text-green-500">OUR TEAM</span>
-          </h1>
-          <p>
-            Events and Tournaments: If you attend eSports events, tournaments,
-            or conventions where the Dragon eSports Team is participating, they
-            may have a merchandise booth set up where you can purchase team
-            merchandise directly.
-          </p>
+        <!-- About -->
+        <div class="space-y-2">
+          <h4 class="text-[#404145] font-bold pb-6">About</h4>
+          <ul class="space-y-2">
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Press & News</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Partnerships</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Intellectual Property Claims</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Investor Relations</a
+              >
+            </li>
+          </ul>
         </div>
-        <button
-          class="group relative min-h-[50px] w-40 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-        >
-          <span
-            class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-          ></span>
-          <span
-            class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-            >GET MERCH</span
-          >
-        </button>
-      </div>
-    </section>
 
-    <!-- featured product -->
-    <section class="container">
-      <div
-        data-aos="zoom-in"
-        class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-lg mx-auto mb-8"
+        <!-- Support and Education -->
+        <div class="space-y-2">
+          <h4 class="text-[#404145] font-bold pb-6">Support and Education</h4>
+          <ul class="space-y-2">
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Help & Support</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+              >
+                Trust & Safety</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Selling on Fiverr</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Buying on Fiverr</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Fiverr Guides</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Learn <br />
+                <span class="text-[#b5b6ba] text-sm">Online Courses</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Community -->
+        <div class="space-y-2">
+          <h4 class="text-[#404145] font-bold pb-6">Community</h4>
+          <ul class="space-y-2">
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Customer Success Stories</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Community Hub</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Forum</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Creators</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Affiliates</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Podcast</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Invite a Friend</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Become a Seller</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Community Standards</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Business Solutions -->
+        <div class="space-y-2">
+          <h4 class="text-[#404145] font-bold pb-6">Business Solutions</h4>
+          <ul class="space-y-2">
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >About Business Solutions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Fiverr Pro</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Fiverr Certified</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Become an Agency</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Fiverr Enterprise</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+              >
+                ClearVoice <br /><span class="text-sm text-[#b5b6ba]"
+                  >Content Marketing</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+              >
+                Working Not Working</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#74767e] transition-all duration-300 ease-linear hover:underline"
+                href="#"
+                >Contact Sales</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- footer bottom -->
+      <section
+        class="container flex flex-col md:justify-start lg:flex-row lg:justify-between md:items-start lg:items-center border-t border-[#b5b6ba] py-4 lg:py-0 gap-x-4"
       >
-        <h1
-          class="font-black text-3xl md:text-[40px] leading-normal text-white"
-        >
-          FEATURED <span class="text-green-500">PRODUCTS</span>
-        </h1>
-        <p>
-          Posters and Art Prints: Artwork and posters featuring the Dragon
-          eSports Team members or iconic moments from tournaments can be great
-          collectibles for fans to display in their gaming setup or room.
-        </p>
-      </div>
-
-      <!-- product detailes -->
-      <div
-        id="product-detailes"
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-4 md:gap-6 lg:gap-8"
-      ></div>
-
-      <div class="flex justify-center mt-8">
-        <button
-          onclick="showAllProducts()"
-          id="show-all-products"
-          class="group hidden relative min-h-[50px] w-44 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-        >
-          <span
-            class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-          ></span>
-          <span
-            class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-            >Show All Products
-          </span>
-        </button>
-      </div>
-    </section>
-
-    <!-- follow -->
-    <section class="container">
-      <div
-        data-aos="zoom-in"
-        class="flex flex-col justify-center items-center text-center gap-4 w-full lg:max-w-lg mx-auto mb-8"
-      >
-        <h1
-          class="font-black text-3xl md:text-[40px] leading-normal text-white"
-        >
-          FOLLOW US ON <span class="uppercase text-green-500">Github</span>
-        </h1>
-        <p>
-          Create a GitHub Organization: If your team doesn't already have one,
-          create a GitHub organization specifically for your team. This will
-          serve as a centralized hub for all your team's projects and
-          repositories.
-        </p>
-      </div>
-
-      <!-- post -->
-      <div
-        id="post"
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-8"
-      ></div>
-
-      <div class="flex justify-center mt-8">
-        <button
-          onclick="showAllFollows()"
-          id="show-all-follows"
-          class="group hidden relative min-h-[50px] w-44 overflow-hidden border border-primary-1 rounded-xl bg-transparent text-primary-1 btn shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
-        >
-          <span
-            class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-1 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-1 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"
-          ></span>
-          <span
-            class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white"
-            >Show All Follows
-          </span>
-        </button>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-      <div class="container">
-        <!-- footer top -->
+        <!-- copyright -->
         <div
-          class="flex flex-col md:flex-row justify-between items-center gap-8 py-8 pb-10"
+          class="flex flex-col md:flex-row md:justify-normal items-center gap-x-4"
         >
-          <!-- logo -->
-          <a data-aos="zoom-in-up" href="./index.html">
-            <h1 class="text-2xl md:text-3xl font-black uppercase">
-              M<span class="text-primary-1 font-chakra-petch">Sports</span>
-            </h1>
+          <!-- footer logo -->
+          <a href="https://www.fiverr.com/" target="_blank">
+            <img
+              class="lg:flex-grow-0 w-[90px] h-[40px] opacity-50 lg:h-auto object-cover"
+              src="./images/fiverr-logo.png"
+              alt="fiver logo"
+            />
           </a>
-
-          <!-- footer menu -->
-          <div
-            id="footer-menu"
-            class="grid grid-cols-1 md:grid-cols-2 justify-between gap-8"
-          ></div>
+          <p class="text-[#b5b6ba]">&copy; Fiverr International Ltd. 2024</p>
         </div>
-        <!-- footer bottom -->
-        <p
-          class="py-8 text-center font-medium text-lg border-t-2 border-primary-1/20 border-dashed"
+        <!-- footer bottom rihgt -->
+        <div
+          class="flex flex-col md:flex-row md:justify-start md:items-start lg:items-center gap-x-4"
         >
-          Copyright &copy; eSports
-          <strong class="text-green-500"
-            >Designed by Mehedi Hassan Miraj</strong
-          >
-          <span id="footer-year" class="text-primary-1 font-semibold"></span>
-        </p>
-      </div>
+          <!-- social icons -->
+          <ul class="flex items-center justify-center gap-x-2">
+            <li>
+              <a href="https://www.tiktok.com/foryou?lang=en" target="_blank"
+                ><i
+                  class="ri-tiktok-fill text-[#74767E] flex justify-center items-center size-[40px] text-2xl transition-all duration-300 bg-transparent rounded-full hover:bg-[#EFEFF0]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i
+                  class="ri-instagram-line text-[#74767E] flex justify-center items-center size-[40px] text-2xl transition-all duration-300 bg-transparent rounded-full hover:bg-[#EFEFF0]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/mehedi-hassan-miraj/"
+                target="_blank"
+                ><i
+                  class="ri-linkedin-box-fill text-[#74767E] flex justify-center items-center size-[40px] text-2xl transition-all duration-300 bg-transparent rounded-full hover:bg-[#EFEFF0]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=61554869056271"
+                target="_blank"
+                ><i
+                  class="ri-facebook-circle-fill text-[#74767E] flex justify-center items-center size-[40px] text-2xl transition-all duration-300 bg-transparent rounded-full hover:bg-[#EFEFF0]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/" target="_blank"
+                ><i
+                  class="ri-pinterest-fill text-[#74767E] flex justify-center items-center size-[40px] text-2xl transition-all duration-300 bg-transparent rounded-full hover:bg-[#EFEFF0]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://x.com/" target="_blank"
+                ><i
+                  class="ri-twitter-x-line text-[#74767E] flex justify-center items-center size-[40px] text-2xl transition-all duration-300 bg-transparent rounded-full hover:bg-[#EFEFF0]"
+                ></i
+              ></a>
+            </li>
+          </ul>
+
+          <ul class="flex items-center justify-center gap-x-2">
+            <li>
+              <button
+                class="text-[15px] flex justify-center items-center gap-x-2 px-4 py-2 rounded-full transition-all duration-300 ease-linear bg-transparent hover:bg-[#F5F5F5] text-[#74767E] font-medium"
+              >
+                <i class="ri-global-line text-base"></i>English
+              </button>
+            </li>
+            <li>
+              <button
+                class="text-[15px] flex justify-center items-center gap-x-2 px-4 py-2 rounded-full transition-all duration-300 ease-linear bg-transparent hover:bg-[#F5F5F5] text-[#74767E] font-medium"
+              >
+                $ USD
+              </button>
+            </li>
+            <li>
+              <img
+                class="p-2 size-[35px] rounded-full opacity-50 border border-[#74767E] hover:bg-[#EFEFF0] hover:border-0 transition-all duration-300 ease-linear"
+                src="./images/accessibility.png"
+                alt="accessibility"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
     </footer>
-    <!-- javascript -->
-    <script src="./js/menu.js"></script>
-    <script src="./js/sponsored.js"></script>
-    <script src="./js/upcoming.js"></script>
-    <script src="./js/news-post.js"></script>
-    <script src="./js/article.js"></script>
-    <script src="./js/product.js"></script>
-    <script src="./js/follow.js"></script>
-    <script src="./js/footer-menu.js"></script>
-    <script src="./js/date.js"></script>
-    <!-- AOS animation added -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="./main.js"></script>
+    <!-- footer end -->
   </body>
 </html>
